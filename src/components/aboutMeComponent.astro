@@ -1,0 +1,101 @@
+---
+import { Image } from "astro:assets";
+import animoji from "../animoji.png";
+---
+
+<div class="flex flex:col md:flex-row h-screen items-center">
+  <div class="flex-1 flex flex-col justify-center h-screen overflow-hidden">
+    <div
+      class="w-[120%] h-32 inline-flex bg-gray-300 -rotate-12 flex-nowrap overflow-hidden ml-[-10%]"
+    >
+      <ul
+        class="flex items-center justify-center md:justify-start [&>li]:mx-8 [&>img]:max-h-32 [&>img]:max-w-none animate-infinite-scroll"
+      >
+        <li>
+          <Image
+            src={animoji}
+            alt="animoji"
+            class="object-cover w-full h-full"
+          />
+        </li>
+        <li>
+          <Image
+            src={animoji}
+            alt="animoji"
+            class="object-cover w-full h-full"
+          />
+        </li>
+      </ul>
+      <ul
+        class="flex items-center justify-center md:justify-start [&>li]:mx-8 [&>img]:max-h-32 [&>img]:max-w-none animate-infinite-scroll"
+        aria-hidden="true"
+      >
+        <li>
+          <Image
+            src={animoji}
+            alt="animoji"
+            class="object-cover w-full h-full"
+          />
+        </li>
+        <li>
+          <Image
+            src={animoji}
+            alt="animoji"
+            class="object-cover w-full h-full"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="w-[150%] h-32 inline-flex bg-gray-300 rotate-[35deg] flex-nowrap overflow-hidden ml-[-25%]"
+    >
+      <ul
+        class="flex items-center justify-center md:justify-start [&>li]:mx-8 [&>img]:max-h-32 [&>img]:max-w-none animate-infinite-scroll-reverse"
+      >
+        <li>
+          <Image
+            src={animoji}
+            alt="animoji"
+            class="object-cover w-full h-full"
+          />
+        </li>
+        <li>
+          <Image
+            src={animoji}
+            alt="animoji"
+            class="object-cover w-full h-full"
+          />
+        </li>
+      </ul>
+      <ul
+        class="flex items-center justify-center md:justify-start [&>li]:mx-8 [&>img]:max-h-32 [&>img]:max-w-none animate-infinite-scroll-reverse"
+        aria-hidden="true"
+      >
+        <li>
+          <Image
+            src={animoji}
+            alt="animoji"
+            class="object-cover w-full h-full"
+          />
+        </li>
+        <li>
+          <Image
+            src={animoji}
+            alt="animoji"
+            class="object-cover w-full h-full"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="flex-1">
+    <div class="text-white text-xl leading-loose text-left lg:p-32 p-4">
+      I'm Luis, a 21-year-old Computer Science enthusiast with a keen interest
+      in web development. I'm always exploring the latest and fastest
+      technologies to create efficient and forward-thinking digital experiences.
+      Dive into my work or reach out to discuss the ever-evolving world of web
+      tech!
+    </div>
+  </div>
+</div>

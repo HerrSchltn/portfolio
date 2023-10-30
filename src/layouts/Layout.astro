@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html class="bg-[#111827]" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Luis Scholten" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Luis Scholten</title>
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>

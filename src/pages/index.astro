@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+import GreetingComponent from "../components/greetingComponent.astro";
+import AboutMeComponent from "../components/aboutMeComponent.astro";
+import ReferencesComponent from "../components/referencesComponent.astro";
+import HeaderComponent from "../components/headerComponent.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <GreetingComponent>
+    <HeaderComponent />
+  </GreetingComponent>
+  <AboutMeComponent />
+  <ReferencesComponent />
+</Layout>
