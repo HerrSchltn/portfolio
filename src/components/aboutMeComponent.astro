@@ -1,96 +1,136 @@
 ---
 import { Image } from "astro:assets";
 import animoji from "../animoji.png";
+import astroLogo from "../astro-logo.png";
+import flutterLogo from "../flutter-logo.png";
+import gitLogo from "../git-logo.png";
+import nestjsLogo from "../nestjs-logo.png";
+import tailwindcss from "../tailwindcss-logo.png";
+import typescriptLogo from "../typescript-logo.png";
+import vuejsLogo from "../vuejs-logo.png";
 ---
 
-<div class="flex flex:col md:flex-row h-screen items-center">
+<div class="flex h-screen items-center flex-col md:flex-row">
   <div class="flex-1 flex flex-col justify-center h-screen overflow-hidden">
-    <div
-      class="w-[120%] h-32 inline-flex bg-gray-300 -rotate-12 flex-nowrap overflow-hidden ml-[-10%]"
-    >
-      <ul
-        class="flex items-center justify-center md:justify-start [&>li]:mx-8 [&>img]:max-h-32 [&>img]:max-w-none animate-infinite-scroll"
-      >
+    <div class="bg-slate-300 w-[120%] h-32 inline-flex flex-nowrap  -rotate-12 overflow-hidden ml-[-10%]">
+      <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
         <li>
           <Image
-            src={animoji}
+            src={gitLogo}
             alt="animoji"
-            class="object-cover w-full h-full"
+            class=""
           />
         </li>
         <li>
           <Image
-            src={animoji}
+            src={astroLogo}
             alt="animoji"
-            class="object-cover w-full h-full"
+            class=""
+          />
+        </li>
+        <li>
+          <Image
+            src={flutterLogo}
+            alt="animoji"
+            class=""
           />
         </li>
       </ul>
-      <ul
-        class="flex items-center justify-center md:justify-start [&>li]:mx-8 [&>img]:max-h-32 [&>img]:max-w-none animate-infinite-scroll"
-        aria-hidden="true"
-      >
+      <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
         <li>
           <Image
-            src={animoji}
+            src={gitLogo}
             alt="animoji"
-            class="object-cover w-full h-full"
+            class=""
           />
         </li>
         <li>
           <Image
-            src={animoji}
+            src={astroLogo}
             alt="animoji"
-            class="object-cover w-full h-full"
+            class=""
+          />
+        </li>
+        <li>
+          <Image
+            src={flutterLogo}
+            alt="animoji"
+            class=""
           />
         </li>
       </ul>
     </div>
 
     <div
-      class="w-[150%] h-32 inline-flex bg-gray-300 rotate-[35deg] flex-nowrap overflow-hidden ml-[-25%]"
+      class="bg-slate-300 w-[150%] h-32 inline-flex flex-nowrap rotate-[35deg] overflow-hidden ml-[-25%]"
     >
-      <ul
-        class="flex items-center justify-center md:justify-start [&>li]:mx-8 [&>img]:max-h-32 [&>img]:max-w-none animate-infinite-scroll-reverse"
-      >
+
+      <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse">
         <li>
           <Image
-            src={animoji}
+            src={vuejsLogo}
             alt="animoji"
-            class="object-cover w-full h-full"
+            class=""
           />
         </li>
         <li>
           <Image
-            src={animoji}
+            src={nestjsLogo}
             alt="animoji"
-            class="object-cover w-full h-full"
+            class=""
+          />
+        </li>
+        <li>
+          <Image
+            src={tailwindcss}
+            alt="animoji"
+            class=""
+          />
+        </li>
+        <li>
+          <Image
+            src={typescriptLogo}
+            alt="animoji"
+            class=""
           />
         </li>
       </ul>
       <ul
-        class="flex items-center justify-center md:justify-start [&>li]:mx-8 [&>img]:max-h-32 [&>img]:max-w-none animate-infinite-scroll-reverse"
-        aria-hidden="true"
+        class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-reverse"
       >
-        <li>
-          <Image
-            src={animoji}
-            alt="animoji"
-            class="object-cover w-full h-full"
-          />
-        </li>
-        <li>
-          <Image
-            src={animoji}
-            alt="animoji"
-            class="object-cover w-full h-full"
-          />
-        </li>
+      <li>
+        <Image
+          src={vuejsLogo}
+          alt="animoji"
+          class=""
+        />
+      </li>
+      <li>
+        <Image
+          src={nestjsLogo}
+          alt="animoji"
+          class=""
+        />
+      </li>
+      <li>
+        <Image
+          src={tailwindcss}
+          alt="animoji"
+          class=""
+        />
+      </li>
+      <li>
+        <Image
+          src={typescriptLogo}
+          alt="animoji"
+          class=""
+        />
+      </li>
       </ul>
     </div>
   </div>
   <div class="flex-1">
-    <div class="text-white text-xl leading-loose text-left lg:p-32 p-4">
+    <div class="text-white text-xl leading-loose text-left lg:p-24 p-4">
       I'm Luis, a 21-year-old Computer Science enthusiast with a keen interest
       in web development. I'm always exploring the latest and fastest
       technologies to create efficient and forward-thinking digital experiences.
