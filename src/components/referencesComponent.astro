@@ -1,1 +1,46 @@
-<div class="h-screen"></div>
+---
+import frittyPicture1 from "../frittyPic1.png";
+import frittyPicture2 from "../frittyPic2.png";
+import frittyPicture3 from "../frittyPic3.png";
+import { Image } from "astro:assets";
+---
+
+<div class="flex h-screen items-center flex-col md:flex-row">
+  <div
+    class="flex-1 font-mono font-bold justify-center items-center text-white text-xl leading-loose text-left p-24"
+  >
+    Developed in Flutter in 2020, FrittyAnswer is a fun app where users pull
+    fries from a virtual container to reveal quirky quotes. The app includes
+    customization features and a salt shaker interaction with the character,
+    Fritty.
+  </div>
+  <div class="flex-1 flex justify-around items-center p-12">
+    <div class="rotate-2">
+      <Image
+        src={frittyPicture1}
+        alt="frittyPicture1"
+        class="object-cover h-80 w-40 rounded-xl"
+        loading="eager"
+      />
+    </div>
+    <div class="-rotate-3">
+      <Image
+        src={frittyPicture2}
+        alt="frittyPicture2"
+        class="object-cover h-80 w-40 rounded-xl"
+        loading="eager"
+      />
+    </div>
+    <div class="rotate-2">
+      <Image
+        src={frittyPicture3}
+        alt="frittyPicture3"
+        class="object-cover h-80 w-40 rounded-xl"
+        loading="eager"
+      />
+    </div>
+  </div>
+  
+
+  </div>
+</div>
